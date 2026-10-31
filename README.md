@@ -46,7 +46,7 @@ SELECT COUNT(*) FROM Employees; -- 10
 $env:PRACTICE_DB_CONNECTION = "Server=.\SQLEXPRESS;Database=PracticeDB;Integrated Security=True;TrustServerCertificate=True"
 ```
 
-Для постоянного хранения добавьте переменную в свойства системы или в локальный `.env` (он исключён через `.gitignore`).
+Для постоянного хранения добавьте переменную в свойства системы или в профиль PowerShell. Файл `.env` в репозиторий не коммитится.
 
 ### 3. Запустить приложение
 
@@ -124,3 +124,5 @@ dotnet run --project src\PracticeDb.App -c Release -- select
 dotnet run --project src\PracticeDb.App -c Release -- add "Проверка" 50000.00 1
 dotnet run --project src\PracticeDb.App -c Release -- report
 ```
+
+После проверки удалите тестовую запись или пересоздайте базу через `init.sql`.
