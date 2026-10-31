@@ -1,0 +1,23 @@
+# SQL Server database files
+*.mdf
+*.ldf
+*.bak
+*.trn
+
+# Local secrets and environment-specific configuration
+.env
+appsettings.Development.json
+
+# .NET build output
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# JetBrains Rider
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
