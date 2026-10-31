@@ -181,6 +181,15 @@ INSERT INTO EmployeeProjects (EmployeeId, ProjectId, Hours) VALUES
     (10, 4, 200),(10, 1, 30);
 ```
 
+Дополнительно `init.sql` задаёт руководителей для четырёх сотрудников:
+
+```sql
+UPDATE Employees SET ManagerId = 1  WHERE EmployeeId = 4;
+UPDATE Employees SET ManagerId = 2  WHERE EmployeeId = 3;
+UPDATE Employees SET ManagerId = 5  WHERE EmployeeId = 6;
+UPDATE Employees SET ManagerId = 10 WHERE EmployeeId = 9;
+```
+
 Проверка количества строк:
 
 ```sql
